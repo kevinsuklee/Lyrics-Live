@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>		
+		<style>
+			#modal{
+				border:4px solid #CCC;
+				width:100px;
+				height:50px;
+				display:none;
+				position:absolute;
+				left:50%; 
+				top:50%;
+				margin:-25px 0 0 -50px;
+				border-radius:5px;
+			} 
+		</style>
+	</head>
+
+	<body>
+
+
+		<div id="modal"></div>
+		<a href="#" class="click">Click Me!</a>
+
+		<script>
+			$('.click').click(function(){
+			$('#modal').show();
+			$('#modal').draggable();   
+			});​
+		</script>
+	</body>
+
+
+</html>
